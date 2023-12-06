@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PC room</title>
+    <link rel="icon" href="icons/favicon.png" type="image/png">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/general_style.css">
+</head>
+<body>
+    <header class="header">HeaderHeader</header>
+    <script src="js/includeheader.js"></script>
+
+
+    <div class="page_head-wrapper">
+        <p class="page_head">Обратная связь</p>
+    </div>
+
+    <div class="content__item" id="p4_p1">
+        <p class="content__title">Сделайте свой заказ с помощью формы</p>
+        <form action="http://ya.ru/" class="form">
+            <div class="form__input">
+                <label for="name" class="form_quest">Введите имя:</label>
+                <input id="name" name="name" type="text" required="" class="input">
+           </div>
+            <div class="form__input">
+                <label for="surname" class="form_quest">Введите фамилию:</label>
+                <input id="surname" name="surname" type="text" required="" class="input">
+            </div>
+            <div class="form__input">
+                <label for="phone" class="form_quest">Введите номер:</label>
+                <input id="phone" name="phone" type="number" required="" class="input">
+            </div>
+            
+            <p class="form_quest">Что хотите купить?</p>
+            <div>
+                <input id="1" type="radio" name="pc" value="headphones" required="">
+                <label for="1" class="form__radio">Наушники</label>
+            </div>
+            <div>
+                <input id="2" type="radio" name="pc" value="displays" required="">
+                <label for="2" class="form__radio">Монитор</label>
+            </div>
+            <div>
+                <input id="3" type="radio" name="pc" value="keyboards" required="">
+                <label for="3" class="form__radio">Клавиатура</label>
+            </div>
+
+            <button class="button">
+                Мы с вами свяжемся
+            </button>
+
+
+
+        </form>
+    </div>
+
+    <div class="scroll-to-top" id="scroll-to-top">
+        <img src="icons/arrow.png" alt="Вернуться наверх">
+    </div>
+    <script src="js/header.js"></script>
+    <script src="js/global.js"></script>
+</body>

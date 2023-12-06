@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Raleway;
+    color: black;
+}
+
+body{
+    background: rgb(149, 173, 233);
+    display: grid;
+    grid-template-columns: 300px 1fr 300px;
+    grid-row-gap: 40px;
+}
+
+a {
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.current-page{
+    border: 2px solid black;
+    border-radius: 24px;
+    padding: 4px;
+}
+
+.page_head-wrapper{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    grid-row: 2;
+    grid-column: 2;
+    text-align: center;
+}
+
+.page_head{
+    font-size: 56px;
+    font-weight: 600;
+    display: inline;
+}
+
+.nav{
+    grid-row: 3;
+    grid-column: 2;
+    padding: 25px;
+    border: 2px solid black;
+    border-radius: 24px;
+    background-color:rgb(203, 222, 240);
+}
+
+.nav__head{
+    font-size: 36px;
+    font-weight: 300;
+}
+
+.nav__elem{
+    margin-top: 15px;
+    margin-left: 30px;
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.nav__item{
+    margin-left: 60px;
+    font-size: 24px;
+    font-weight: 400;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.content__item{
+    width: 600px;
+    grid-column: 2;
+    display: grid;
+    padding: 25px;
+    border: 2px solid black;
+    border-radius: 24px;
+    background-color:rgb(203, 222, 240);
+    grid-row-gap: 30px;
+    justify-self: center;
+}
+
+.content__title{
+    width: 500px;
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    justify-self: center;
+}
+
+.form{
+    justify-self: center;
+    width: 300px;
+    display: grid;
+    grid-row-gap: 10px;
+    padding: 25px;
+}
+
+.form__input{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 5px;
+}
+
+.input{
+    height: 40px;
+    font-size: 20px;
+    padding-left: 14px;
+    padding-right: 14px;
+}
+
+.form_quest{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+label{
+    font-size: 20px;
+}
+
+
+.button{
+    margin-top: 20px;
+    width: 300px;
+    height: 60px;
+    border: 2px solid black;
+    border-radius: 15px;
+    font-size: 24px;
+    justify-self: center;
+}
+
+.scroll-to-top {
+    display: none;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    height: 100px;
+    cursor: pointer;
+}
+
+.scroll-to-top img {
+width: 100%;
+height: 100%;
+}
+
+.products {
+    grid-column: 2;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 30px;
+    padding: 25px;
+    border: 2px solid black;
+    border-radius: 24px;
+    background-color:rgb(203, 222, 240);
+}
+
+.products__wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(100px, 1fr));
+    grid-row-gap: 40px;
+}
+
+.product__item {
+    display: grid;
+    grid-row-gap: 15px;
+    width: 200px;
+    justify-self: center;
+    padding: 25px;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color:rgb(255, 255, 255);
+
+}
+
+.product__img{
+    width: 200px;
+}
+
+.products__label{
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.product__price{
+    font-weight: 600;
+    justify-self: end;
+}
+
+.product__description{
+    font-size: 20px;
+}
+
+
+@media (max-width: 1440px){
+    body{
+        grid-template-columns: 100px 1fr 100px;
+    }
+}
+
+@media (max-width: 1050px){
+    body{
+        grid-template-columns: 10px 1fr 10px;
+    }
+}
+
+@media (max-width: 870px){
+    .products__wrapper{
+        grid-template-columns: repeat(2, minmax(100px, 1fr));
+    }
+}
+
+@media (max-width: 610px){
+    .products__wrapper{
+        grid-template-columns: repeat(1, minmax(100px, 1fr));
+    }
+
+    .logo{
+        grid-column: 2;
+    }
+    .content__item{
+        width: 500px;
+    }
+
+}
+
+@media (max-width: 500px){
+    .content__item{
+        width: 400px;
+    }
+    .content__title{
+        width: 350px;
+    }
+    .form{
+        width: 350px;
+    }
+}
+
+@media (max-width: 400px){
+    .content__item{
+        width: 300px;
+        padding: 4px
+    }
+    .content__title{
+        width: 250px;
+    }
+    .form{
+        width: 250px;
+    }
+    .input{
+        width: 200px;
+    }
+    .button{
+        width: 200px;
+    }
+}
