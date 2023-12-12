@@ -32,8 +32,11 @@ document.addEventListener('DOMContentLoaded', function() {
         var currentPath = window.location.pathname;
         var index = paths.indexOf(currentPath);
 
-        if (index !== -1) {
-            nav_items[index].classList.add('current-page');
+        for (let i = 0; i < paths.length; i++) {
+            if(currentPath.includes(paths[i]))
+            {
+                nav_items[i].classList.add("current-page");
+            } 
         }
 
     }, 400);

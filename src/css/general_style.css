@@ -19,12 +19,6 @@ a {
     font-weight: 600;
 }
 
-.current-page{
-    border: 2px solid black;
-    border-radius: 24px;
-    padding: 4px;
-}
-
 .page_head-wrapper{
     margin-top: 20px;
     margin-bottom: 20px;
